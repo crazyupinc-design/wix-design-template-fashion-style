@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/wix-design-template-business/static/css/main.cd5e232f.css",
-    "main.js": "/wix-design-template-business/static/js/main.7367b4d7.js",
-    "static/js/787.3e011e42.chunk.js": "/wix-design-template-business/static/js/787.3e011e42.chunk.js",
-    "static/media/mainpage@3x.png": "/wix-design-template-business/static/media/mainpage@3x.6e394593daa8a6c80db7.png",
-    "index.html": "/wix-design-template-business/index.html",
-    "main.cd5e232f.css.map": "/wix-design-template-business/static/css/main.cd5e232f.css.map",
-    "main.7367b4d7.js.map": "/wix-design-template-business/static/js/main.7367b4d7.js.map",
-    "787.3e011e42.chunk.js.map": "/wix-design-template-business/static/js/787.3e011e42.chunk.js.map"
+    "main.css": "/wix-design-template-fashion-style/static/css/main.9c67ae0d.css",
+    "main.js": "/wix-design-template-fashion-style/static/js/main.bd50dfb1.js",
+    "static/js/787.c0bcca05.chunk.js": "/wix-design-template-fashion-style/static/js/787.c0bcca05.chunk.js",
+    "static/media/mainpage@3x.png": "/wix-design-template-fashion-style/static/media/mainpage@3x.6e394593daa8a6c80db7.png",
+    "index.html": "/wix-design-template-fashion-style/index.html",
+    "main.9c67ae0d.css.map": "/wix-design-template-fashion-style/static/css/main.9c67ae0d.css.map",
+    "main.bd50dfb1.js.map": "/wix-design-template-fashion-style/static/js/main.bd50dfb1.js.map",
+    "787.c0bcca05.chunk.js.map": "/wix-design-template-fashion-style/static/js/787.c0bcca05.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd5e232f.css",
-    "static/js/main.7367b4d7.js"
+    "static/css/main.9c67ae0d.css",
+    "static/js/main.bd50dfb1.js"
   ]
 }
