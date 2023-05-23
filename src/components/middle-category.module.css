@@ -1,0 +1,175 @@
+.landingImageIcon {
+  position: relative;
+  border-radius: var(--br-121xl);
+  width: 198px;
+  height: 195px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.landingImageIcon:hover {
+  cursor: pointer;
+}
+.categoryToys4 {
+  border-radius: 98.25px;
+  width: 198px;
+  height: 395px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.vectorIcon {
+  position: absolute;
+  margin: 0 !important;
+  top: -91px;
+  left: -57.5px;
+  width: 306px;
+  height: 306px;
+  z-index: 0;
+}
+.getTo,
+.knowUs,
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.getTo {
+  position: relative;
+  letter-spacing: 1.3px;
+  width: 136px;
+  height: 31px;
+  flex-shrink: 0;
+}
+.knowUs,
+.title {
+  width: 190px;
+}
+.knowUs {
+  position: relative;
+  font-size: var(--font-size-4xl);
+  letter-spacing: 1.3px;
+  height: 31px;
+  flex-shrink: 0;
+}
+.title {
+  flex-direction: column;
+  z-index: 1;
+}
+.ourStory {
+  position: relative;
+  font-size: var(--font-size-mini);
+  line-height: 23.8px;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+}
+.button,
+.vectorParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 11.59000015258789px 61.560001373291016px 13.40999984741211px
+    60.439998626708984px;
+  background-color: var(--color-skyblue);
+  flex-direction: row;
+  align-items: flex-start;
+  z-index: 2;
+}
+.button:hover {
+  background-color: var(--color-lightcoral-100);
+}
+.vectorParent {
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: var(--gap-xl);
+}
+.button:hover,
+.landingImageIcon1:hover,
+.vectorParent:hover {
+  cursor: pointer;
+}
+.categoryOurStory,
+.categoryToys4Parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.categoryOurStory {
+  align-self: stretch;
+  width: 326px;
+  flex-direction: column;
+}
+.categoryToys4Parent {
+  flex-direction: row;
+  gap: var(--gap-22xl);
+}
+.vectorIcon1 {
+  position: absolute;
+  margin: 0 !important;
+  top: 25.56px;
+  left: 58.3px;
+  width: 278.7px;
+  height: 287.85px;
+  z-index: 0;
+}
+.landingImageIcon1 {
+  position: relative;
+  border-radius: var(--br-101xl);
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+.categoryBoysGirls2 {
+  border-radius: var(--br-68xl-5);
+  width: 337px;
+  height: 378px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.middleCategory {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-22xl);
+  z-index: 5;
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 960px) {
+  .categoryOurStory,
+  .categoryToys4Parent,
+  .middleCategory {
+    gap: var(--gap-0);
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .categoryToys4Parent,
+  .middleCategory {
+    flex-direction: column;
+    gap: var(--gap-151xl);
+  }
+  .middleCategory {
+    gap: var(--gap-41xl);
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+}

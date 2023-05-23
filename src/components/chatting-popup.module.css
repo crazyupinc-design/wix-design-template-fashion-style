@@ -1,0 +1,52 @@
+.chattingPopupChild,
+.chattingPopupItem {
+  margin: 0 !important;
+  position: absolute;
+  left: 0;
+  width: 343px;
+}
+.chattingPopupChild {
+  top: 0;
+  border-radius: var(--br-sm) var(--br-sm) 0 0;
+  background-color: #f8787b;
+  height: 63px;
+  z-index: 0;
+}
+.chattingPopupItem {
+  border: 0;
+  background-color: var(--color-white);
+  top: 554px;
+  height: 58px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding-11xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.div {
+  position: relative;
+  line-height: 22.4px;
+  z-index: 2;
+}
+.chattingPopup {
+  position: relative;
+  border-radius: var(--br-sm);
+  background-color: #fff0f1;
+  width: 343px;
+  height: 612px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-13xl) 0 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

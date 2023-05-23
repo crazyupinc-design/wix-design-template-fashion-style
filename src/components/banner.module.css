@@ -1,0 +1,163 @@
+.bgLeftIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 444px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.bannerLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.bgRight,
+.vectorIcon {
+  position: absolute;
+  margin: 0 !important;
+}
+.bgRight {
+  top: 0;
+  left: 0;
+  background-color: var(--color-lemonchiffon);
+  width: 1067px;
+  height: 444px;
+  z-index: 0;
+}
+.vectorIcon {
+  top: 24px;
+  left: -72px;
+  width: 251.85px;
+  height: 254.22px;
+  z-index: 1;
+}
+.aBoutiqueShop {
+  position: relative;
+}
+.forYourLittleOnes,
+.shopClothesCollection {
+  position: relative;
+  font-family: var(--font-inter);
+}
+.forYourLittleOnes {
+  font-size: var(--font-size-4xl);
+  letter-spacing: 2.6px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 254.12px;
+  height: 31px;
+  flex-shrink: 0;
+}
+.shopClothesCollection {
+  font-size: var(--font-size-sm);
+  line-height: 22.4px;
+  color: var(--color-darkslategray-200);
+  text-align: left;
+}
+.shopClothesCollection:hover {
+  color: var(--color-white);
+}
+.aBoutiqueShopParent,
+.bannerButton {
+  display: flex;
+  justify-content: flex-start;
+}
+.bannerButton {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: 13.800000190734863px 42.91999816894531px 15.199999809265137px
+    42.08000183105469px;
+  background-color: var(--color-lemonchiffon);
+  flex-direction: row;
+  align-items: flex-start;
+}
+.bannerButton:hover {
+  background-color: var(--color-lightcoral-100);
+}
+.aBoutiqueShopParent {
+  height: 257px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-12xl);
+}
+.banner1,
+.bannerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bannerContent {
+  width: 706px;
+  height: 257px;
+  justify-content: flex-start;
+  z-index: 2;
+}
+.banner1 {
+  align-self: stretch;
+  height: 444px;
+  justify-content: center;
+  position: relative;
+  gap: var(--gap-12xl);
+  text-align: center;
+  font-size: var(--font-size-58xl);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-sacramento);
+}
+.banner,
+.bannerRight {
+  display: flex;
+  align-items: center;
+}
+.bannerRight {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.banner {
+  align-self: stretch;
+  background-color: var(--color-white);
+  flex-direction: row;
+  justify-content: flex-end;
+  z-index: 2;
+}
+@media screen and (max-width: 1060px) {
+  .bannerLeft {
+    flex: unset;
+    align-self: stretch;
+  }
+  .bannerContent {
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .banner1,
+  .bannerRight {
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+  }
+  .banner1 {
+    width: auto;
+  }
+  .bannerRight {
+    flex: unset;
+  }
+  .banner {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 570px) {
+  .aBoutiqueShop {
+    font-size: var(--font-size-36xl);
+  }
+  .forYourLittleOnes {
+    font-family: var(--font-inter);
+  }
+  .bannerRight {
+    height: 300px;
+  }
+}

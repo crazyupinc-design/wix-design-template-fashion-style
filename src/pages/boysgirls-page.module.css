@@ -1,0 +1,153 @@
+.bgIcon {
+  position: absolute;
+  margin: 0 !important;
+  top: 8.85px;
+  left: 5.74px;
+  width: 209.39px;
+  height: 193.92px;
+  z-index: 0;
+}
+.boysgirls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 222px;
+  height: 211px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.title,
+.titleSection {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.title {
+  flex-direction: row;
+  position: relative;
+}
+.titleSection {
+  flex-direction: column;
+  padding: var(--padding-3xs) var(--padding-201xl);
+}
+.productIcon {
+  width: 299.66px;
+  height: 300px;
+  object-fit: cover;
+  z-index: 0;
+}
+.new {
+  position: relative;
+  line-height: 19.6px;
+}
+.newMark {
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray-300);
+  width: 53px;
+  height: 20px;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.name,
+.price {
+  position: relative;
+  line-height: 22.4px;
+}
+.price {
+  color: var(--color-slategray);
+}
+.product4,
+.productNamePrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.productNamePrice {
+  padding: 0 212.66000366210938px 0.3899993896484375px 0;
+  gap: 4.39px;
+  z-index: 2;
+  text-align: left;
+  color: var(--color-darkslategray-200);
+}
+.product4 {
+  position: relative;
+  gap: var(--gap-mini);
+}
+.detailPageLandingImageIcon {
+  position: relative;
+  width: 299.66px;
+  height: 300px;
+  object-fit: cover;
+  z-index: 0;
+}
+.newMark2,
+.productListRow1,
+.productListRow11 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.newMark2 {
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray-300);
+  width: 53px;
+  height: 20px;
+  z-index: 1;
+}
+.productListRow1,
+.productListRow11 {
+  align-self: stretch;
+  gap: var(--gap-xl);
+}
+.boysgirlsPage,
+.productSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productSection {
+  align-self: stretch;
+  padding: var(--padding-31xl) 0;
+  justify-content: center;
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+}
+.boysgirlsPage {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  overflow: hidden;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-4xl);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1060px) {
+  .titleSection {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .productListRow1,
+  .productListRow11 {
+    flex-direction: column;
+  }
+  .productListRow11 {
+    align-items: center;
+    justify-content: center;
+  }
+}

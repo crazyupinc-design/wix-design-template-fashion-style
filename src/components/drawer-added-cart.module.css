@@ -1,0 +1,115 @@
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.chevronRightIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.div,
+.title {
+  display: flex;
+  align-items: center;
+}
+.div {
+  position: relative;
+  line-height: 22.4px;
+  font-weight: 500;
+  justify-content: center;
+  width: 211px;
+  height: 95px;
+  flex-shrink: 0;
+}
+.title {
+  background-color: var(--color-gray-400);
+  width: 337px;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-31xl);
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.addCart {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.butoon {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-gray-200);
+  width: 306px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.butoon:hover {
+  background-color: var(--color-silver-300);
+}
+.name,
+.price {
+  position: relative;
+  line-height: 22.4px;
+}
+.price {
+  color: var(--color-slategray);
+}
+.productNamePrice {
+  width: 302px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 212.66000366210938px 0.3899993896484375px 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.frameChild {
+  position: relative;
+  border-top: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 298px;
+  height: 1px;
+}
+.drawerAddedCart,
+.productNamePriceParent {
+  height: 569px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-19xl);
+  text-align: left;
+  color: var(--color-darkslategray-200);
+}
+.drawerAddedCart {
+  position: relative;
+  background-color: var(--color-white);
+  width: 337px;
+  height: 100%;
+  overflow: hidden;
+  justify-content: flex-start;
+  opacity: 0;
+  max-width: 90%;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.drawerAddedCart.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-right;
+}

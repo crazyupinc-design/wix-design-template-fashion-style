@@ -1,0 +1,173 @@
+.myShoppingCart {
+  position: relative;
+  line-height: 28px;
+}
+.title {
+  align-self: stretch;
+  border-bottom: 1px solid var(--color-darkslategray-400);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xs) 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.detailPageLandingImageIcon {
+  position: relative;
+  width: 135.5px;
+  height: 136px;
+  object-fit: cover;
+}
+.name,
+.price {
+  position: relative;
+  line-height: 22.4px;
+}
+.name {
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+.price {
+  color: var(--color-slategray);
+}
+.productNamePrice {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 212.66000366210938px 0.3899993896484375px 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 14.39px;
+}
+.xCircleIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.addedProduct,
+.quantity {
+  display: flex;
+  flex-direction: row;
+}
+.addedProduct {
+  width: 346px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-4xl);
+}
+.quantity {
+  border: 1px solid var(--color-black);
+  font-family: var(--font-inter);
+  font-size: var(--font-size-sm);
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 61px;
+  height: 29px;
+  align-items: center;
+  justify-content: center;
+}
+.price1 {
+  position: relative;
+  line-height: 22.4px;
+}
+.content,
+.quantityPrice {
+  display: flex;
+  flex-direction: row;
+}
+.quantityPrice {
+  width: 268px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-21xl);
+  color: var(--color-slategray);
+}
+.content {
+  align-self: stretch;
+  border-bottom: 1px solid var(--color-darkslategray-400);
+  padding: var(--padding-3xs);
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: var(--font-size-sm);
+}
+.tagIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.couponCodeButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 28px;
+  font-family: var(--font-inter);
+  color: var(--color-gray-200);
+  text-align: left;
+  display: inline-block;
+}
+.addMemo:hover,
+.couponCodeButton:hover {
+  cursor: pointer;
+}
+.addMemo,
+.couponCode {
+  display: flex;
+  align-items: center;
+}
+.couponCode {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.addMemo {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 28px;
+  font-family: var(--font-inter);
+  color: var(--color-gray-200);
+  text-align: left;
+  width: 105.12px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.cartLeft,
+.memo {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.cartLeft {
+  flex-direction: column;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 960px) {
+  .content {
+    flex-direction: column;
+    gap: var(--gap-11xl);
+  }
+}
+@media screen and (min-width: 780px) and (max-width: 570px) {
+  .title {
+    display: flex;
+  }
+}

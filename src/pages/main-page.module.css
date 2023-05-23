@@ -1,0 +1,256 @@
+.bgImageIcon {
+  position: absolute;
+  margin: 0 !important;
+  bottom: -112.5px;
+  left: calc(50% - 720px);
+  width: 1893px;
+  height: 2263px;
+  object-fit: cover;
+  z-index: 0;
+}
+.topCategory {
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  padding: 90px var(--padding-101xl) var(--padding-11xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 228px;
+  z-index: 3;
+}
+.categoryToys2Icon {
+  border-radius: 95.5px;
+  width: 191px;
+  height: 191px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  cursor: pointer;
+}
+.categoryBoysGirls3Icon:hover,
+.categoryToys2Icon:hover,
+.categoryToys3Icon:hover,
+.landingImageIcon1:hover,
+.landingImageIcon:hover {
+  cursor: pointer;
+}
+.landingImageIcon {
+  position: absolute;
+  margin: 0 !important;
+  top: 7px;
+  left: 22px;
+  border-radius: 170px;
+  width: 272px;
+  height: 272px;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 0;
+}
+.new {
+  position: relative;
+}
+.title {
+  border-radius: 40px;
+  background-color: #f7e881;
+  width: 84px;
+  height: 82px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.categoryBoysGirls1 {
+  width: 294px;
+  height: 341px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.categoryToys3Icon {
+  border-radius: 51px;
+  max-height: 100%;
+  width: 102px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  cursor: pointer;
+}
+.middleCategory {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 145px;
+  z-index: 4;
+}
+.categoryBoysGirls3Icon {
+  border-radius: 84px;
+  width: 217.05px;
+  height: 217.04px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  cursor: pointer;
+}
+.col {
+  width: 286px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.landingImageIcon1 {
+  position: absolute;
+  margin: 0 !important;
+  top: 18px;
+  left: 30px;
+  border-radius: 150px;
+  width: 266px;
+  height: 266px;
+  object-fit: cover;
+  cursor: pointer;
+  z-index: 0;
+}
+.last {
+  margin: 0;
+}
+.lastChance {
+  position: relative;
+  letter-spacing: 1.7px;
+  line-height: 22.1px;
+  z-index: 1;
+}
+.bottomCategory,
+.categoryBoysGirls4,
+.col1 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.categoryBoysGirls4 {
+  border-radius: 63px;
+  background-color: #fec7c6;
+  width: 105px;
+  height: 105px;
+  padding: var(--padding-3xs);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.bottomCategory,
+.col1 {
+  align-items: flex-start;
+}
+.col1 {
+  width: 327px;
+  height: 309px;
+  padding: var(--padding-3xs) var(--padding-3xs) var(--padding-3xs)
+    var(--padding-11xl);
+  justify-content: flex-start;
+}
+.bottomCategory {
+  width: 1440px;
+  padding: 0 0 0 200px;
+  justify-content: center;
+  gap: 104px;
+  z-index: 6;
+}
+.frameIcon {
+  position: relative;
+  width: 26px;
+  height: 26px;
+}
+.chattingService {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.text {
+  width: 88px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-10xs) 0 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+.buttonChat,
+.mainPage,
+.text {
+  display: flex;
+  justify-content: flex-start;
+}
+.buttonChat {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mini) 36.220001220703125px var(--padding-mini)
+    32.779998779296875px;
+  background-color: var(--color-lightcoral-100);
+  margin: 0 !important;
+  position: absolute;
+  top: calc(50% + 1064.75px);
+  left: calc(50% + 481px);
+  border-radius: var(--br-11xl);
+  box-shadow: 0 0 3px rgba(182, 180, 180, 0.5);
+  width: 193px;
+  height: 56px;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: flex-end;
+  gap: var(--gap-3xs);
+  z-index: 8;
+}
+.mainPage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/public/mainpage@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 960px) {
+  .topCategory {
+    flex-direction: column;
+    gap: var(--gap-31xl);
+  }
+  .bottomCategory,
+  .middleCategory {
+    flex-direction: column;
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+  .middleCategory {
+    gap: var(--gap-31xl);
+    padding-right: 0;
+  }
+  .bottomCategory {
+    gap: var(--gap-0);
+    align-items: center;
+    justify-content: center;
+    padding-right: var(--padding-31xl);
+  }
+}
+@media screen and (max-width: 570px) {
+  .landingImageIcon {
+    width: 272px;
+    height: 272px;
+  }
+}

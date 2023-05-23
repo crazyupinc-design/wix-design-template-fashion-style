@@ -1,0 +1,119 @@
+.bgIcon {
+  position: absolute;
+  margin: 0 !important;
+  top: -57px;
+  left: 24.5px;
+  width: 189.74px;
+  height: 200.73px;
+  z-index: 0;
+}
+.summer {
+  position: relative;
+  letter-spacing: 2.6px;
+  line-height: 28.6px;
+  justify-content: center;
+  width: 112.76px;
+  height: 31px;
+  flex-shrink: 0;
+}
+.sale,
+.summer,
+.title {
+  display: flex;
+  align-items: center;
+}
+.sale {
+  position: relative;
+  letter-spacing: 2.6px;
+  line-height: 28.6px;
+  justify-content: center;
+  width: 59.31px;
+  height: 31px;
+  flex-shrink: 0;
+}
+.title {
+  width: 146.76px;
+  flex-direction: column;
+  padding: 0 var(--padding-mid);
+  box-sizing: border-box;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.clothing,
+.off,
+.springsummer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 181.98px;
+  height: 66px;
+  flex-shrink: 0;
+}
+.clothing,
+.springsummer {
+  font-size: var(--font-size-xl);
+  letter-spacing: 1.1px;
+  width: 180.65px;
+  height: 27px;
+}
+.clothing {
+  font-size: var(--font-size-lgi);
+  width: 92.51px;
+}
+.content {
+  width: 181.98px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 2;
+  text-align: left;
+  font-size: var(--font-size-28xl);
+}
+.shopNow {
+  position: relative;
+  font-size: var(--font-size-mini);
+  line-height: 23.8px;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 13.09000015258789px 47.20000076293945px 14.90999984741211px
+    46.79999923706055px;
+  background-color: var(--color-skyblue);
+  width: 167px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 3;
+}
+.button:hover {
+  background-color: var(--color-lightcoral-100);
+  cursor: pointer;
+}
+.categorySale {
+  width: 277px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: var(--gap-xl);
+  text-align: center;
+  font-size: var(--font-size-6xl);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 570px) {
+  .button {
+    align-self: stretch;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+  }
+}
