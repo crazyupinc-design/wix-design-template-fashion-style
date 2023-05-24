@@ -10,7 +10,7 @@ const CategoryToys1: FunctionComponent = () => {
 
   return (
     <div className={styles.categoryToys1}>
-      <img className={styles.bgIcon} alt="" src="/bg3.svg" />
+      <img className={styles.bgIcon} alt="" src="/bg11.svg" />
       <div className={styles.title}>
         <div className={styles.newToys}>New Toys</div>
         <div className={styles.collection}>Collection</div>
@@ -18,7 +18,7 @@ const CategoryToys1: FunctionComponent = () => {
       <button className={styles.button} onClick={onButton1Click}>
         <div className={styles.shopNow}>Shop Now</div>
       </button>
-      <img className={styles.bgIcon1} alt="" src="/bg4.svg" />
+      <img className={styles.bgIcon1} alt="" src="/bg2.svg" />
     </div>
   );
 };

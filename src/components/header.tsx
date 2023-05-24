@@ -6,7 +6,6 @@ import styles from "./header.module.css";
 
 type HeaderType = {
   vector?: string;
-  logoBackground?: string;
   vector1?: string;
 
   /** Style props */
@@ -26,7 +25,6 @@ type HeaderType = {
 
 const Header: FunctionComponent<HeaderType> = ({
   vector,
-  logoBackground,
   vector1,
   cartZIndex,
   toysDecorColor,
@@ -93,7 +91,7 @@ const Header: FunctionComponent<HeaderType> = ({
           <img
             className={styles.logoBackgroundIcon}
             alt=""
-            src={logoBackground}
+            src="/logobackground1@2x.png"
           />
           <div className={styles.just4Kids}>Just 4 Kids</div>
         </div>

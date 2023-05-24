@@ -3,20 +3,11 @@ import CSS, { Property } from "csstype";
 import styles from "./footer.module.css";
 
 type FooterType = {
-  insta?: string;
-  faceBook?: string;
-  pinter?: string;
-
   /** Style props */
   propZIndex?: Property.ZIndex;
 };
 
-const Footer: FunctionComponent<FooterType> = ({
-  insta,
-  faceBook,
-  pinter,
-  propZIndex,
-}) => {
+const Footer: FunctionComponent<FooterType> = ({ propZIndex }) => {
   const footerStyle: CSS.Properties = useMemo(() => {
     return {
       zIndex: propZIndex,
@@ -81,9 +72,9 @@ const Footer: FunctionComponent<FooterType> = ({
         </div>
         <div className={styles.snsParent}>
           <div className={styles.sns}>
-            <img className={styles.instaIcon} alt="" src={insta} />
-            <img className={styles.instaIcon} alt="" src={faceBook} />
-            <img className={styles.instaIcon} alt="" src={pinter} />
+            <img className={styles.instaIcon} alt="" src="/insta@2x.png" />
+            <img className={styles.instaIcon} alt="" src="/facebook@2x.png" />
+            <img className={styles.instaIcon} alt="" src="/pinter@2x.png" />
           </div>
           <div className={styles.licenseMark}>
             <div className={styles.license}>

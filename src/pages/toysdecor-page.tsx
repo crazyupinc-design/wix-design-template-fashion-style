@@ -29,9 +29,8 @@ const ToysdecorPage: FunctionComponent = () => {
   return (
     <div className={styles.toysdecorPage}>
       <Header
-        vector="/vector.svg"
-        logoBackground="/logobackground@2x.png"
-        vector1="/vector2.svg"
+        vector="/vector8.svg"
+        vector1="/vector9.svg"
         aboutColor="#fc8f8d"
         memberSectionColor="#313131"
         onLogoClick={onLogoClick}
@@ -42,14 +41,14 @@ const ToysdecorPage: FunctionComponent = () => {
       />
       <div className={styles.titleSection}>
         <div className={styles.title}>
-          <img className={styles.vectorIcon} alt="" src="/vector7.svg" />
+          <img className={styles.vectorIcon} alt="" src="/vector14.svg" />
           <div className={styles.boysgirls}>{`Toys & Decor`}</div>
         </div>
       </div>
       <div className={styles.productSection}>
         <div className={styles.productListRow1}>
           <div className={styles.product1}>
-            <img className={styles.productIcon} alt="" src="/product@2x.png" />
+            <img className={styles.productIcon} alt="" src="/product5@2x.png" />
             <div className={styles.newMark}>
               <div className={styles.new}>N e w</div>
             </div>
@@ -62,7 +61,7 @@ const ToysdecorPage: FunctionComponent = () => {
             <img
               className={styles.detailPageLandingImageIcon}
               alt=""
-              src="/detailpagelandingimage1@2x.png"
+              src="/detailpagelandingimage6@2x.png"
             />
             <div className={styles.newMark1}>
               <div className={styles.new}>N e w</div>
@@ -76,7 +75,7 @@ const ToysdecorPage: FunctionComponent = () => {
             <img
               className={styles.detailPageLandingImageIcon}
               alt=""
-              src="/detailpagelandingimage2@2x.png"
+              src="/detailpagelandingimage7@2x.png"
             />
             <div className={styles.newMark}>
               <div className={styles.new}>Sale</div>
@@ -89,7 +88,7 @@ const ToysdecorPage: FunctionComponent = () => {
         </div>
         <div className={styles.productListRow1}>
           <div className={styles.product1}>
-            <img className={styles.productIcon} alt="" src="/product1@2x.png" />
+            <img className={styles.productIcon} alt="" src="/product6@2x.png" />
             <div className={styles.newMark1}>
               <div className={styles.new}>N e w</div>
             </div>
@@ -102,7 +101,7 @@ const ToysdecorPage: FunctionComponent = () => {
             <img
               className={styles.detailPageLandingImageIcon}
               alt=""
-              src="/detailpagelandingimage3@2x.png"
+              src="/detailpagelandingimage8@2x.png"
             />
             <div className={styles.newMark1}>
               <div className={styles.new}>N e w</div>
@@ -113,7 +112,7 @@ const ToysdecorPage: FunctionComponent = () => {
             </div>
           </div>
           <div className={styles.product1}>
-            <img className={styles.productIcon} alt="" src="/product2@2x.png" />
+            <img className={styles.productIcon} alt="" src="/product7@2x.png" />
             <div className={styles.newMark1}>
               <div className={styles.new}>Sale</div>
             </div>
@@ -124,12 +123,7 @@ const ToysdecorPage: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <Footer
-        insta="/insta1@2x.png"
-        faceBook="/facebook1@2x.png"
-        pinter="/pinter1@2x.png"
-        propZIndex="unset"
-      />
+      <Footer propZIndex="unset" />
     </div>
   );
 };

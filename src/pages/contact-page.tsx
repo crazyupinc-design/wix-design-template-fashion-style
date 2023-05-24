@@ -31,9 +31,8 @@ const ContactPage: FunctionComponent = () => {
   return (
     <div className={styles.contactPage}>
       <Header
-        vector="/vector.svg"
-        logoBackground="/logobackground@2x.png"
-        vector1="/vector2.svg"
+        vector="/vector8.svg"
+        vector1="/vector9.svg"
         toysDecorColor="#313131"
         aboutColor="#313131"
         contactColor="#313131"
@@ -46,11 +45,7 @@ const ContactPage: FunctionComponent = () => {
       />
       <Contents1 />
       <Contents2 />
-      <Footer
-        insta="/insta@2x.png"
-        faceBook="/facebook@2x.png"
-        pinter="/pinter@2x.png"
-      />
+      <Footer />
     </div>
   );
 };

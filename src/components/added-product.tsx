@@ -13,7 +13,7 @@ const AddedProduct: FunctionComponent = () => {
       <img
         className={styles.detailPageLandingImageIcon}
         alt=""
-        src="/detailpagelandingimage@2x.png"
+        src="/detailpagelandingimage1@2x.png"
       />
       <div className={styles.product1} onClick={onProduct1Click}>
         <div className={styles.productNamePrice}>

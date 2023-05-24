@@ -159,7 +159,7 @@
 }
 .bottomCategory {
   width: 1440px;
-  padding: 0 0 0 200px;
+  padding: 0 0 0 var(--padding-181xl);
   justify-content: center;
   gap: 104px;
   z-index: 6;

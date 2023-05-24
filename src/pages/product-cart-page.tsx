@@ -31,9 +31,8 @@ const ProductCartPage: FunctionComponent = () => {
   return (
     <div className={styles.productCartPage}>
       <Header
-        vector="/vector.svg"
-        logoBackground="/logobackground@2x.png"
-        vector1="/vector2.svg"
+        vector="/vector8.svg"
+        vector1="/vector9.svg"
         toysDecorColor="#fc8f8d"
         memberSectionColor="#313131"
         onLogoClick={onLogoClick}
@@ -48,12 +47,7 @@ const ProductCartPage: FunctionComponent = () => {
           <OrderList />
         </div>
       </div>
-      <Footer
-        insta="/insta@2x.png"
-        faceBook="/facebook@2x.png"
-        pinter="/pinter@2x.png"
-        propZIndex="unset"
-      />
+      <Footer propZIndex="unset" />
     </div>
   );
 };

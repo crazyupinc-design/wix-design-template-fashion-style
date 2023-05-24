@@ -10,7 +10,7 @@ const CategorySale: FunctionComponent = () => {
 
   return (
     <div className={styles.categorySale}>
-      <img className={styles.bgIcon} alt="" src="/bg2.svg" />
+      <img className={styles.bgIcon} alt="" src="/bg1.svg" />
       <div className={styles.title}>
         <div className={styles.summer}>Summer</div>
         <div className={styles.sale}>Sale</div>

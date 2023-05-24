@@ -4,7 +4,6 @@
   font-size: var(--font-size-smi);
   background-color: var(--color-antiquewhite);
   box-sizing: border-box;
-  width: 455px;
   height: 30px;
   flex-direction: row;
   padding: 0 var(--padding-6xl);
@@ -13,6 +12,7 @@
 .container,
 .inputBox,
 .textarea {
+  align-self: stretch;
   display: flex;
   justify-content: flex-start;
 }
@@ -21,8 +21,6 @@
   font-family: var(--font-inter);
   font-size: var(--font-size-smi);
   background-color: var(--color-antiquewhite);
-  box-sizing: border-box;
-  width: 455px;
   overflow: hidden;
   flex-direction: row;
   padding: var(--padding-3xs) var(--padding-6xl);
@@ -64,6 +62,7 @@
   flex-direction: column;
 }
 .form {
+  width: 423px;
   align-items: flex-end;
   gap: var(--gap-6xs);
 }
@@ -81,12 +80,12 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  gap: var(--gap-70xl);
+  gap: var(--gap-40xl);
 }
 .contents2 {
   background-color: var(--color-antiquewhite);
   flex-direction: column;
-  padding: var(--padding-61xl) var(--padding-3xs);
+  padding: var(--padding-61xl) var(--padding-181xl);
   align-items: center;
   justify-content: flex-start;
 }
@@ -95,5 +94,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 570px) {
+  .form {
+    width: 340px;
+  }
+  .contents2 {
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: var(--padding-81xl);
+    padding-right: var(--padding-81xl);
+    box-sizing: border-box;
   }
 }

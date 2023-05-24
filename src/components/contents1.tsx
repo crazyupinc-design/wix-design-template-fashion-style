@@ -3,37 +3,41 @@ import styles from "./contents1.module.css";
 const Contents1: FunctionComponent = () => {
   return (
     <div className={styles.contents1}>
-      <div className={styles.contactSection}>
-        <div className={styles.contact}>
-          <div className={styles.col}>
+      <div className={styles.ourStoryBottom}>
+        <div className={styles.ourStoryBottom1}>
+          <div className={styles.title}>
             <img className={styles.bgIcon} alt="" src="/bg.svg" />
-            <div className={styles.title}>Contact</div>
+            <div className={styles.ourCollections}>Contact</div>
           </div>
-          <div className={styles.contents}>
-            <div className={styles.weAreAlways}>
+          <div className={styles.content}>
+            <div className={styles.text}>
               <p
-                className={styles.giveUsFeedback}
+                className={styles.weAreAlways}
               >{`We are always happy to see & hear from you. If you want to`}</p>
-              <p className={styles.giveUsFeedback}>
+              <p className={styles.weAreAlways}>
                 give us feedback, ask a question or simply want to say hello,
               </p>
-              <p className={styles.giveUsFeedback}>
+              <p className={styles.weAreAlways}>
                 please visit us or use the contact form below.
               </p>
             </div>
-            <div className={styles.col1}>
-              <div className={styles.col2}>
-                <div className={styles.street}>500 Terry Francine Street</div>
-                <div className={styles.address}>San Francisco, CA 94158</div>
-                <div className={styles.email}>info@my-domain.com</div>
-              </div>
-              <div className={styles.div}>—</div>
-              <div className={styles.phoneNumber}>1-800-000-0000</div>
-            </div>
+          </div>
+          <div className={styles.content1}>
+            <div className={styles.text}>500 Terry Francine Street</div>
+            <div className={styles.text}>San Francisco, CA 94158</div>
+            <div className={styles.text}>info@my-domain.c</div>
+            <a
+              className={styles.text4}
+              href="mailto:info@my-domain.com"
+              target="_blank"
+            >
+              —
+            </a>
+            <div className={styles.text5}>1-800-000-0000</div>
           </div>
         </div>
         <div className={styles.shopImg}>
-          <img className={styles.imgIcon} alt="" src="/img1@2x.png" />
+          <img className={styles.imgIcon} alt="" src="/img@2x.png" />
         </div>
       </div>
     </div>

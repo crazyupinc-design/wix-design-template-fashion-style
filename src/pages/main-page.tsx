@@ -66,9 +66,8 @@ const MainPage: FunctionComponent = () => {
       <div className={styles.mainPage}>
         <img className={styles.bgImageIcon} alt="" src="/bgimage@2x.png" />
         <Header
-          vector="/vector8.svg"
-          logoBackground="/logobackground1@2x.png"
-          vector1="/vector10.svg"
+          vector="/vector.svg"
+          vector1="/vector21.svg"
           cartZIndex="1"
           memberSectionColor="#313131"
           onLogoClick={onLogoClick}
@@ -132,12 +131,7 @@ const MainPage: FunctionComponent = () => {
             </div>
           </div>
         </div>
-        <Footer
-          insta="/insta@2x.png"
-          faceBook="/facebook@2x.png"
-          pinter="/pinter@2x.png"
-          propZIndex="7"
-        />
+        <Footer propZIndex="7" />
         <button className={styles.buttonChat} onClick={openChattingPopup}>
           <img className={styles.frameIcon} alt="" src="/frame.svg" />
           <div className={styles.text}>

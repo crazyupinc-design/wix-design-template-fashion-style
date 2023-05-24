@@ -34,7 +34,7 @@ const CartLeft: FunctionComponent = () => {
             <img
               className={styles.detailPageLandingImageIcon}
               alt=""
-              src="/detailpagelandingimage4@2x.png"
+              src="/detailpagelandingimage@2x.png"
             />
             <div className={styles.productNamePrice}>
               <div className={styles.name}>I'm a product</div>
@@ -54,7 +54,7 @@ const CartLeft: FunctionComponent = () => {
           </div>
         </div>
         <div className={styles.couponCode}>
-          <img className={styles.tagIcon} alt="" src="/tag1.svg" />
+          <img className={styles.tagIcon} alt="" src="/tag.svg" />
           <button
             className={styles.couponCodeButton}
             onClick={openCouponCodePopup}
@@ -63,7 +63,7 @@ const CartLeft: FunctionComponent = () => {
           </button>
         </div>
         <div className={styles.memo}>
-          <img className={styles.tagIcon} alt="" src="/filetext1.svg" />
+          <img className={styles.tagIcon} alt="" src="/filetext.svg" />
           <button className={styles.addMemo} onClick={openMemoPopup}>
             메모추가
           </button>

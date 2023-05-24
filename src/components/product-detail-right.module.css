@@ -25,7 +25,7 @@
 .price {
   font-size: var(--font-size-xl);
   line-height: 30.8px;
-  color: var(--color-dimgray-300);
+  color: var(--color-dimgray-200);
   width: 44.67px;
   height: 27px;
 }
@@ -77,7 +77,7 @@
   flex-direction: row;
   padding: 0 0 var(--padding-12xs) var(--padding-11xs);
   text-align: center;
-  color: var(--color-dimgray-300);
+  color: var(--color-dimgray-200);
 }
 .quantity {
   position: absolute;

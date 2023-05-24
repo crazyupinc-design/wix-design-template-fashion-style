@@ -12,7 +12,7 @@ const DetailPopup: FunctionComponent<DetailPopupType> = ({ onClose }) => {
       <div className={styles.productDetail}>
         <div className={styles.productPhoto}>
           <div className={styles.col}>
-            <img className={styles.imgIcon} alt="" src="/img@2x.png" />
+            <img className={styles.imgIcon} alt="" src="/img1@2x.png" />
             <div className={styles.colorSelect}>
               <div className={styles.color2}>
                 <img className={styles.redIcon} alt="" src="/red@2x.png" />

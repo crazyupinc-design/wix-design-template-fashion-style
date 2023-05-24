@@ -29,7 +29,7 @@ const MiddleCategory: FunctionComponent = () => {
         </div>
         <div className={styles.categoryOurStory}>
           <div className={styles.vectorParent}>
-            <img className={styles.vectorIcon} alt="" src="/vector15.svg" />
+            <img className={styles.vectorIcon} alt="" src="/vector61.svg" />
             <div className={styles.title}>
               <div className={styles.getTo}>Get To</div>
               <div className={styles.knowUs}>Know Us</div>
@@ -41,7 +41,7 @@ const MiddleCategory: FunctionComponent = () => {
         </div>
       </div>
       <div className={styles.categoryBoysGirls2}>
-        <img className={styles.vectorIcon1} alt="" src="/vector16.svg" />
+        <img className={styles.vectorIcon1} alt="" src="/vector7.svg" />
         <img
           className={styles.landingImageIcon1}
           alt=""

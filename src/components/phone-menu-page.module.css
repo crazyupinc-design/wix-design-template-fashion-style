@@ -1,0 +1,81 @@
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.div,
+.icon {
+  position: relative;
+}
+.icon {
+  width: 26px;
+  height: 26px;
+}
+.div {
+  line-height: 22.4px;
+}
+.logIn {
+  width: 116px;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 var(--padding-sm);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.xSquareIcon {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.logInParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.aboutParent,
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.aboutParent {
+  width: 202px;
+  align-items: flex-start;
+  color: var(--color-darkslategray-500);
+}
+.frameParent {
+  position: absolute;
+  top: 46px;
+  left: 46px;
+  width: 272px;
+  align-items: center;
+}
+.phoneMenuPage {
+  position: relative;
+  background-color: var(--color-white);
+  width: 360px;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  max-width: 90%;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-200);
+  font-family: var(--font-inter);
+}
+.phoneMenuPage.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-right;
+}

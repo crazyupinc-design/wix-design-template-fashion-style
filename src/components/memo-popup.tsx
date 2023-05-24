@@ -10,7 +10,7 @@ const MemoPopup: FunctionComponent<MemoPopupType> = ({ onClose }) => {
     <div className={styles.memoPopup}>
       <div className={styles.col}>
         <div className={styles.memo}>
-          <img className={styles.fileTextIcon} alt="" src="/filetext.svg" />
+          <img className={styles.fileTextIcon} alt="" src="/filetext1.svg" />
           <div className={styles.addMemo}>메모추가</div>
         </div>
         <input

@@ -4,7 +4,7 @@ const Col: FunctionComponent = () => {
   return (
     <div className={styles.col}>
       <div className={styles.couponCode}>
-        <img className={styles.tagIcon} alt="" src="/tag.svg" />
+        <img className={styles.tagIcon} alt="" src="/tag1.svg" />
         <div className={styles.couponCodeButton}>쿠폰 코드 입력</div>
       </div>
       <div className={styles.col1}>

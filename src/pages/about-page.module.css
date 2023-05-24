@@ -2,7 +2,7 @@
 .imageIcon1 {
   position: absolute;
   margin: 0 !important;
-  top: 344px;
+  top: 424px;
   left: 782.5px;
   width: 246px;
   height: 246px;
@@ -10,15 +10,15 @@
   z-index: 0;
 }
 .imageIcon1 {
-  top: 130px;
+  top: 190px;
   left: 991.5px;
   width: 182px;
   height: 182px;
   z-index: 1;
 }
 .imageIcon2 {
-  top: 493px;
-  left: 526.5px;
+  top: 619px;
+  left: 524px;
   width: 194px;
   height: 194px;
   object-fit: cover;
@@ -31,56 +31,65 @@
   margin: 0 !important;
 }
 .imageIcon3 {
-  top: 576px;
-  left: 267px;
+  top: 810px;
+  left: 286px;
   width: 292px;
   height: 273px;
   object-fit: cover;
   z-index: 3;
 }
 .vectorIcon {
-  top: -99.44px;
-  left: -52.71px;
+  top: -123.94px;
+  left: -57.71px;
   width: 287.84px;
   height: 287.84px;
   z-index: 0;
 }
-.col1,
-.title {
+.ourCollections {
   position: relative;
-}
-.title {
   z-index: 1;
 }
-.col1 {
+.title {
+  align-self: stretch;
   display: flex;
   flex-direction: row;
-  padding: var(--padding-3xs);
+  padding: var(--padding-3xs) 0;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
   gap: var(--gap-3xs);
-  font-size: var(--font-size-4xl);
 }
 .thisIsA {
   margin: 0;
 }
-.content1 {
+.text {
   position: relative;
   line-height: 24px;
 }
-.col,
-.ourStoryTop {
+.content {
   align-self: stretch;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-size: var(--font-size-sm);
+}
+.content,
+.ourStoryBottom,
+.ourStoryBottom1 {
+  display: flex;
   justify-content: flex-start;
 }
-.col {
-  gap: var(--gap-smi);
+.ourStoryBottom1 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-10xs);
 }
-.ourStoryTop {
-  padding: var(--padding-131xl) 0 0 var(--padding-231xl);
+.ourStoryBottom {
+  width: 907px;
+  height: 564px;
+  flex-direction: row;
+  padding: var(--padding-61xl) 0 0;
+  box-sizing: border-box;
+  align-items: center;
   z-index: 4;
 }
 .vectorIcon1 {
@@ -92,49 +101,24 @@
   height: 178.5px;
   z-index: 0;
 }
-.ourCollections {
-  position: relative;
+.ourCollections1 {
   letter-spacing: 0.52px;
   z-index: 1;
 }
-.title1 {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  padding: var(--padding-3xs) 0;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-}
-.text,
-.title1 {
+.ourCollections1,
+.text1 {
   position: relative;
 }
-.content,
-.ourStoryBottom1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.content {
-  align-self: stretch;
-  font-size: var(--font-size-sm);
-}
-.ourStoryBottom1 {
-  gap: var(--gap-10xs);
-}
-.ourStoryBottom {
+.ourStoryBottom2 {
   width: 907px;
   height: 357px;
   display: flex;
   flex-direction: row;
-  padding: var(--padding-61xl) 0 57px;
+  padding: var(--padding-61xl) 0 var(--padding-38xl);
   box-sizing: border-box;
   align-items: center;
   justify-content: flex-end;
   z-index: 5;
-  font-size: var(--font-size-4xl);
 }
 .aboutPage,
 .ourStory {
@@ -142,34 +126,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
 }
 .ourStory {
   align-self: stretch;
+  height: 1136px;
+  padding: 310px 0 var(--padding-181xl);
+  box-sizing: border-box;
+  justify-content: center;
+  gap: var(--gap-51xl);
 }
 .aboutPage {
   background-color: var(--color-white);
   width: 100%;
   overflow: hidden;
+  justify-content: flex-start;
   text-align: left;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-4xl);
   color: var(--color-darkslategray-200);
   font-family: var(--font-inter);
 }
 @media screen and (max-width: 1060px) {
-  .ourStoryTop {
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: var(--padding-31xl);
-    padding-right: var(--padding-31xl);
-    box-sizing: border-box;
-  }
-  .ourStory,
-  .ourStoryBottom {
+  .ourStoryBottom,
+  .ourStoryBottom2 {
     align-self: stretch;
     width: auto;
-  }
-  .ourStoryBottom {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -178,6 +158,8 @@
     box-sizing: border-box;
   }
   .ourStory {
+    align-self: stretch;
+    width: auto;
     gap: var(--gap-31xl);
   }
 }
