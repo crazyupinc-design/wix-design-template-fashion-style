@@ -69,7 +69,7 @@
   align-items: flex-start;
   justify-content: space-between;
 }
-.about {
+.boysGirls {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -82,7 +82,7 @@
   text-align: center;
   display: inline-block;
 }
-.aboutParent,
+.boysGirlsParent,
 .frameParent {
   width: 202px;
   display: flex;

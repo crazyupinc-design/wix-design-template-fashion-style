@@ -15,10 +15,9 @@ const Banner: FunctionComponent = () => {
       </div>
       <div className={styles.bannerRight}>
         <article className={styles.banner1}>
-          <div className={styles.bgRight} />
-          <img className={styles.vectorIcon} alt="" src="/vector51.svg" />
           <div className={styles.bannerContent}>
-            <div className={styles.aBoutiqueShopParent}>
+            <div className={styles.vectorParent}>
+              <img className={styles.vectorIcon} alt="" src="/vector51.svg" />
               <div className={styles.aBoutiqueShop}>A boutique Shop</div>
               <div className={styles.forYourLittleOnes}>
                 for your little ones

@@ -38,6 +38,14 @@ const PhoneMenuPage: FunctionComponent<PhoneMenuPageType> = ({ onClose }) => {
     };
   }, []);
 
+  const onBoysGirlsClick = useCallback(() => {
+    navigate("/boysgirlspage");
+  }, [navigate]);
+
+  const onToysDecorClick = useCallback(() => {
+    navigate("/toysdecorpage");
+  }, [navigate]);
+
   const onAboutClick = useCallback(() => {
     navigate("/aboutpage");
   }, [navigate]);
@@ -60,11 +68,19 @@ const PhoneMenuPage: FunctionComponent<PhoneMenuPageType> = ({ onClose }) => {
             <img className={styles.vectorIcon1} alt="" src="/vector3.svg" />
           </button>
         </div>
-        <div className={styles.aboutParent}>
-          <button className={styles.about} onClick={onAboutClick}>
+        <div className={styles.boysGirlsParent}>
+          <button
+            className={styles.boysGirls}
+            onClick={onBoysGirlsClick}
+          >{`Boys & Girls`}</button>
+          <button
+            className={styles.boysGirls}
+            onClick={onToysDecorClick}
+          >{`Toys & Decor`}</button>
+          <button className={styles.boysGirls} onClick={onAboutClick}>
             About
           </button>
-          <button className={styles.about} onClick={onContactClick}>
+          <button className={styles.boysGirls} onClick={onContactClick}>
             Contact
           </button>
         </div>

@@ -40,8 +40,8 @@ body {
   --color-dimgray-100: #626262;
   --color-dimgray-200: #575757;
   --color-skyblue: #61b3cf;
-  --color-black: #000;
   --color-lemonchiffon: #fbf3bf;
+  --color-black: #000;
   --color-gray-100: #939393;
   --color-gray-200: #99907c;
   --color-gray-300: #867e69;
@@ -75,13 +75,13 @@ body {
   --gap-11xl: 30px;
   --gap-base: 16px;
   --gap-51xl: 70px;
+  --gap-19xl: 38px;
   --gap-15xl: 34px;
   --gap-16xl: 35px;
   --gap-2xl: 21px;
   --gap-4xs-4: 8.4px;
   --gap-4xs: 9px;
   --gap-xs: 12px;
-  --gap-19xl: 38px;
   --gap-4xl: 23px;
   --gap-8xs-4: 4.4px;
   --gap-7xl: 26px;
@@ -132,8 +132,8 @@ body {
   --padding-base: 16px;
   --padding-sm: 14px;
   --padding-xs: 12px;
-  --padding-49xl: 68px;
   --padding-13xl: 32px;
+  --padding-49xl: 68px;
   --padding-88xl: 107px;
   --padding-193xl-7: 212.7px;
   --padding-12xs-4: 0.4px;

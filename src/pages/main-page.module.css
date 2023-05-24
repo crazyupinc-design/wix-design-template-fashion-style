@@ -102,9 +102,9 @@
   display: flex;
   justify-content: center;
   width: 82.5px;
+  cursor: pointer;
 }
 .about:hover,
-.boysGirls,
 .boysGirls:hover,
 .contact:hover,
 .toysDecor:hover {

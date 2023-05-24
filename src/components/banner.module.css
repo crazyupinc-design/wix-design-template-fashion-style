@@ -14,28 +14,18 @@
   align-items: center;
   justify-content: flex-start;
 }
-.bgRight,
 .vectorIcon {
   position: absolute;
   margin: 0 !important;
-}
-.bgRight {
-  top: 0;
-  left: 0;
-  background-color: var(--color-lemonchiffon);
-  width: 1535px;
-  height: 444px;
-  z-index: 0;
-}
-.vectorIcon {
-  top: 24px;
-  left: -72px;
+  top: -69.5px;
+  left: -76px;
   width: 251.85px;
   height: 254.22px;
-  z-index: 1;
+  z-index: 0;
 }
 .aBoutiqueShop {
   position: relative;
+  z-index: 1;
 }
 .forYourLittleOnes,
 .shopClothesCollection {
@@ -52,6 +42,7 @@
   width: 254.12px;
   height: 31px;
   flex-shrink: 0;
+  z-index: 2;
 }
 .shopClothesCollection {
   font-size: var(--font-size-sm);
@@ -62,8 +53,8 @@
 .shopClothesCollection:hover {
   color: var(--color-white);
 }
-.aBoutiqueShopParent,
-.bannerButton {
+.bannerButton,
+.vectorParent {
   display: flex;
   justify-content: flex-start;
 }
@@ -75,34 +66,31 @@
   background-color: var(--color-lemonchiffon);
   flex-direction: row;
   align-items: flex-start;
+  z-index: 3;
 }
 .bannerButton:hover {
   background-color: var(--color-lightcoral-100);
 }
-.aBoutiqueShopParent {
+.vectorParent {
   height: 257px;
   flex-direction: column;
   align-items: center;
+  position: relative;
   gap: var(--gap-12xl);
 }
 .banner1,
 .bannerContent {
+  align-self: stretch;
+  height: 444px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 }
 .bannerContent {
-  width: 706px;
-  height: 257px;
-  justify-content: flex-start;
-  z-index: 2;
+  background-color: var(--color-lemonchiffon);
 }
 .banner1 {
-  align-self: stretch;
-  height: 444px;
-  justify-content: center;
-  position: relative;
-  gap: var(--gap-12xl);
   text-align: center;
   font-size: var(--font-size-58xl);
   color: var(--color-darkslategray-200);
@@ -130,14 +118,14 @@
     flex: unset;
     align-self: stretch;
   }
-  .bannerContent {
-    align-items: center;
-    justify-content: flex-start;
-  }
   .banner1,
+  .bannerContent,
   .bannerRight {
     align-items: center;
     justify-content: center;
+  }
+  .banner1,
+  .bannerRight {
     align-self: stretch;
   }
   .banner1 {
@@ -156,6 +144,10 @@
   }
   .forYourLittleOnes {
     font-family: var(--font-inter);
+  }
+  .bannerContent {
+    align-items: center;
+    justify-content: center;
   }
   .bannerRight {
     height: 300px;
