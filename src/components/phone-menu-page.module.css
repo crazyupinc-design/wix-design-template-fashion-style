@@ -30,7 +30,32 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.xSquareIcon {
+.vectorIcon,
+.vectorIcon1 {
+  position: absolute;
+  height: 75%;
+  width: 75%;
+  top: 12.5%;
+  right: 12.5%;
+  bottom: 12.5%;
+  left: 12.5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vectorIcon1 {
+  height: 30.26%;
+  width: 30.26%;
+  top: 34.87%;
+  right: 34.87%;
+  bottom: 34.87%;
+  left: 34.87%;
+}
+.xSquare {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: #51a4c4;
   position: relative;
   width: 38px;
   height: 38px;
@@ -44,17 +69,27 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+.about {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 22.4px;
+  font-family: var(--font-inter);
+  color: var(--color-darkslategray-500);
+  text-align: center;
+  display: inline-block;
+}
 .aboutParent,
 .frameParent {
+  width: 202px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-5xl);
-}
-.aboutParent {
-  width: 202px;
-  align-items: flex-start;
-  color: var(--color-darkslategray-500);
 }
 .frameParent {
   position: absolute;

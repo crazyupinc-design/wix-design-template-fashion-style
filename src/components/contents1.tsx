@@ -10,22 +10,14 @@ const Contents1: FunctionComponent = () => {
             <div className={styles.ourCollections}>Contact</div>
           </div>
           <div className={styles.content}>
-            <div className={styles.text}>
-              <p
-                className={styles.weAreAlways}
-              >{`We are always happy to see & hear from you. If you want to`}</p>
-              <p className={styles.weAreAlways}>
-                give us feedback, ask a question or simply want to say hello,
-              </p>
-              <p className={styles.weAreAlways}>
-                please visit us or use the contact form below.
-              </p>
-            </div>
+            <div
+              className={styles.text}
+            >{`We are always happy to see & hear from you. If you want to give us feedback, ask a question or simply want to say hello, please visit us or use the contact form below.`}</div>
           </div>
           <div className={styles.content1}>
-            <div className={styles.text}>500 Terry Francine Street</div>
-            <div className={styles.text}>San Francisco, CA 94158</div>
-            <div className={styles.text}>info@my-domain.c</div>
+            <div className={styles.text1}>500 Terry Francine Street</div>
+            <div className={styles.text1}>San Francisco, CA 94158</div>
+            <div className={styles.text1}>info@my-domain.c</div>
             <a
               className={styles.text4}
               href="mailto:info@my-domain.com"

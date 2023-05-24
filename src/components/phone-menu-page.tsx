@@ -1,4 +1,5 @@
-import { FunctionComponent, useEffect } from "react";
+import { FunctionComponent, useCallback, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./phone-menu-page.module.css";
 
 type PhoneMenuPageType = {
@@ -6,6 +7,7 @@ type PhoneMenuPageType = {
 };
 
 const PhoneMenuPage: FunctionComponent<PhoneMenuPageType> = ({ onClose }) => {
+  const navigate = useNavigate();
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -36,6 +38,14 @@ const PhoneMenuPage: FunctionComponent<PhoneMenuPageType> = ({ onClose }) => {
     };
   }, []);
 
+  const onAboutClick = useCallback(() => {
+    navigate("/aboutpage");
+  }, [navigate]);
+
+  const onContactClick = useCallback(() => {
+    navigate("/aboutpage1");
+  }, [navigate]);
+
   return (
     <div className={styles.phoneMenuPage} data-animate-on-scroll>
       <div className={styles.frameParent}>
@@ -44,11 +54,19 @@ const PhoneMenuPage: FunctionComponent<PhoneMenuPageType> = ({ onClose }) => {
             <img className={styles.icon} alt="" src="/icon.svg" />
             <div className={styles.div}>로그인</div>
           </div>
-          <img className={styles.xSquareIcon} alt="" src="/xsquare.svg" />
+          <button className={styles.xSquare}>
+            <img className={styles.vectorIcon} alt="" />
+            <img className={styles.vectorIcon1} alt="" src="/vector2.svg" />
+            <img className={styles.vectorIcon1} alt="" src="/vector3.svg" />
+          </button>
         </div>
         <div className={styles.aboutParent}>
-          <div className={styles.div}>About</div>
-          <div className={styles.div}>Contact</div>
+          <button className={styles.about} onClick={onAboutClick}>
+            About
+          </button>
+          <button className={styles.about} onClick={onContactClick}>
+            Contact
+          </button>
         </div>
       </div>
     </div>

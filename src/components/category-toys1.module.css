@@ -15,14 +15,17 @@
 .collection {
   font-size: var(--font-size-4xl);
 }
+.shopNow,
+.title {
+  display: flex;
+  align-items: center;
+}
 .title {
   width: 121.14px;
   height: 62px;
-  display: flex;
   flex-direction: column;
   padding: var(--padding-11xs) 0.1399993896484375px var(--padding-12xs) 0;
   box-sizing: border-box;
-  align-items: flex-start;
   justify-content: center;
   gap: var(--gap-9xs);
   z-index: 1;
@@ -34,8 +37,6 @@
   font-family: var(--font-inter);
   color: var(--color-white);
   text-align: left;
-  display: flex;
-  align-items: center;
   width: 69px;
   flex-shrink: 0;
 }
