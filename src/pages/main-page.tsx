@@ -68,7 +68,6 @@ const MainPage: FunctionComponent = () => {
         <Header
           vector="/vector.svg"
           vector1="/vector21.svg"
-          cartZIndex="1"
           memberSectionColor="#313131"
           onLogoClick={onLogoClick}
           onBoysGirlsClick={onBoysGirlsClick}

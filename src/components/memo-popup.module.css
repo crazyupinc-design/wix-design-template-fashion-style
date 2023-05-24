@@ -14,35 +14,31 @@
   align-items: center;
   width: 105.12px;
 }
+.inputBox,
 .memo {
   align-self: stretch;
-  flex-direction: row;
   justify-content: flex-start;
-  gap: var(--gap-base);
 }
-.col,
-.inputBox,
-.memo,
-.memoPopup {
+.memo {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
+  gap: var(--gap-base);
 }
 .inputBox {
   border: 1px solid var(--color-gray-200);
   background-color: transparent;
-  flex: 1;
-  box-sizing: border-box;
-  width: 408px;
-  flex-direction: row;
   padding: var(--padding-3xs);
-  justify-content: flex-start;
 }
 .col,
+.inputBox,
 .memoPopup {
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 .col {
-  width: 408px;
+  align-self: stretch;
   justify-content: flex-start;
   gap: var(--gap-15xl);
 }
@@ -50,7 +46,6 @@
   position: relative;
   background-color: var(--color-white);
   width: 536px;
-  height: 275px;
   overflow: hidden;
   padding: var(--padding-49xl);
   box-sizing: border-box;

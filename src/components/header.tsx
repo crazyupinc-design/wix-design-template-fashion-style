@@ -9,7 +9,6 @@ type HeaderType = {
   vector1?: string;
 
   /** Style props */
-  cartZIndex?: Property.ZIndex;
   toysDecorColor?: Property.Color;
   aboutColor?: Property.Color;
   contactColor?: Property.Color;
@@ -26,7 +25,6 @@ type HeaderType = {
 const Header: FunctionComponent<HeaderType> = ({
   vector,
   vector1,
-  cartZIndex,
   toysDecorColor,
   aboutColor,
   contactColor,
@@ -37,12 +35,6 @@ const Header: FunctionComponent<HeaderType> = ({
   onAboutClick,
   onContactClick,
 }) => {
-  const headerNavigationStyle: CSS.Properties = useMemo(() => {
-    return {
-      zIndex: cartZIndex,
-    };
-  }, [cartZIndex]);
-
   const boysGirlsStyle: CSS.Properties = useMemo(() => {
     return {
       color: toysDecorColor,
@@ -79,7 +71,7 @@ const Header: FunctionComponent<HeaderType> = ({
 
   return (
     <>
-      <header className={styles.headerNavigation} style={headerNavigationStyle}>
+      <header className={styles.headerNavigation}>
         <a className={styles.cart}>
           <div className={styles.icon}>
             <img className={styles.vectorIcon} alt="" src={vector} />

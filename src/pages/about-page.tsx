@@ -47,7 +47,7 @@ const AboutPage: FunctionComponent = () => {
         <div className={styles.ourStoryBottom}>
           <div className={styles.ourStoryBottom1}>
             <div className={styles.title}>
-              <img className={styles.vectorIcon} alt="" src="/vector2.svg" />
+              <img className={styles.vectorIcon} alt="" src="/vector5.svg" />
               <div className={styles.ourCollections}>Our Story</div>
             </div>
             <div className={styles.content}>
@@ -99,7 +99,7 @@ const AboutPage: FunctionComponent = () => {
         <div className={styles.ourStoryBottom2}>
           <div className={styles.ourStoryBottom1}>
             <div className={styles.title}>
-              <img className={styles.vectorIcon1} alt="" src="/vector5.svg" />
+              <img className={styles.vectorIcon1} alt="" src="/vector6.svg" />
               <div className={styles.ourCollections1}>
                 <p className={styles.thisIsA}>
                   Our collections are all made with love
