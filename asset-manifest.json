@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/wix-design-template-fashion-style/static/css/main.c3662f42.css",
-    "main.js": "/wix-design-template-fashion-style/static/js/main.6b0a8364.js",
+    "main.css": "/wix-design-template-fashion-style/static/css/main.ff790e61.css",
+    "main.js": "/wix-design-template-fashion-style/static/js/main.58271d4a.js",
     "static/js/787.c0bcca05.chunk.js": "/wix-design-template-fashion-style/static/js/787.c0bcca05.chunk.js",
     "static/media/mainpage@3x.png": "/wix-design-template-fashion-style/static/media/mainpage@3x.6e394593daa8a6c80db7.png",
     "index.html": "/wix-design-template-fashion-style/index.html",
-    "main.c3662f42.css.map": "/wix-design-template-fashion-style/static/css/main.c3662f42.css.map",
-    "main.6b0a8364.js.map": "/wix-design-template-fashion-style/static/js/main.6b0a8364.js.map",
+    "main.ff790e61.css.map": "/wix-design-template-fashion-style/static/css/main.ff790e61.css.map",
+    "main.58271d4a.js.map": "/wix-design-template-fashion-style/static/js/main.58271d4a.js.map",
     "787.c0bcca05.chunk.js.map": "/wix-design-template-fashion-style/static/js/787.c0bcca05.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3662f42.css",
-    "static/js/main.6b0a8364.js"
+    "static/css/main.ff790e61.css",
+    "static/js/main.58271d4a.js"
   ]
 }
