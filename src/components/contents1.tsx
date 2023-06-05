@@ -6,7 +6,7 @@ const Contents1: FunctionComponent = () => {
       <div className={styles.ourStoryBottom}>
         <div className={styles.ourStoryBottom1}>
           <div className={styles.title}>
-            <img className={styles.bgIcon} alt="" src="/bg.svg" />
+            <img className={styles.bgIcon} alt="" src="/bg1.svg" />
             <div className={styles.ourCollections}>Contact</div>
           </div>
           <div className={styles.content}>

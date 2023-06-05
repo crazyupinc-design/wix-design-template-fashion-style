@@ -1,14 +1,26 @@
 import { FunctionComponent, useState, useCallback } from "react";
+import { TextField } from "@mui/material";
+import ChattingPopup from "../components/chatting-popup";
+import PortalPopup from "../components/portal-popup";
 import DrawerEmptyCart from "../components/drawer-empty-cart";
 import PortalDrawer from "../components/portal-drawer";
 import { useNavigate } from "react-router-dom";
 import PhoneMenuPage from "../components/phone-menu-page";
 import styles from "./about-page.module.css";
 const AboutPage: FunctionComponent = () => {
+  const [isChattingPopupOpen, setChattingPopupOpen] = useState(false);
   const [isDrawerEmptyCartOpen, setDrawerEmptyCartOpen] = useState(false);
   const navigate = useNavigate();
   const [isDrawerEmptyCart1Open, setDrawerEmptyCart1Open] = useState(false);
   const [isPhoneMenuPageOpen, setPhoneMenuPageOpen] = useState(false);
+
+  const openChattingPopup = useCallback(() => {
+    setChattingPopupOpen(true);
+  }, []);
+
+  const closeChattingPopup = useCallback(() => {
+    setChattingPopupOpen(false);
+  }, []);
 
   const openDrawerEmptyCart = useCallback(() => {
     setDrawerEmptyCartOpen(true);
@@ -30,12 +42,8 @@ const AboutPage: FunctionComponent = () => {
     navigate("/toysdecorpage");
   }, [navigate]);
 
-  const onAboutClick = useCallback(() => {
-    navigate("/aboutpage");
-  }, [navigate]);
-
   const onContactClick = useCallback(() => {
-    navigate("/aboutpage1");
+    navigate("/aboutpage");
   }, [navigate]);
 
   const openDrawerEmptyCart1 = useCallback(() => {
@@ -79,7 +87,7 @@ const AboutPage: FunctionComponent = () => {
             <img
               className={styles.logoBackgroundIcon}
               alt=""
-              src="/logobackground1@2x.png"
+              src="/logobackground2@2x.png"
             />
             <div className={styles.just4Kids}>Just 4 Kids</div>
           </div>
@@ -93,9 +101,7 @@ const AboutPage: FunctionComponent = () => {
                 className={styles.toysDecor}
                 onClick={onToysDecorClick}
               >{`Toys & Decor`}</div>
-              <div className={styles.about} onClick={onAboutClick}>
-                About
-              </div>
+              <div className={styles.about}>About</div>
               <div className={styles.contact} onClick={onContactClick}>
                 Contact
               </div>
@@ -130,7 +136,7 @@ const AboutPage: FunctionComponent = () => {
           <div className={styles.ourStoryBottom}>
             <div className={styles.ourStoryBottom1}>
               <div className={styles.title}>
-                <img className={styles.vectorIcon4} alt="" src="/vector5.svg" />
+                <img className={styles.vectorIcon4} alt="" src="/vector3.svg" />
                 <div className={styles.ourCollections}>Our Story</div>
               </div>
               <div className={styles.content}>
@@ -154,7 +160,11 @@ const AboutPage: FunctionComponent = () => {
           <div className={styles.ourStoryBottom2}>
             <div className={styles.ourStoryBottom3}>
               <div className={styles.title1}>
-                <img className={styles.vectorIcon5} alt="" src="/vector6.svg" />
+                <img
+                  className={styles.vectorIcon5}
+                  alt=""
+                  src="/vector62.svg"
+                />
                 <div className={styles.ourCollections1}>
                   Our collections are all made with love by independent
                   designers
@@ -212,11 +222,16 @@ const AboutPage: FunctionComponent = () => {
                   <div className={styles.joinOurMailing}>
                     Join Our Mailing List
                   </div>
-                  <input
+                  <TextField
                     className={styles.inputBox}
-                    type="email"
-                    placeholder="Enter your email here*       "
-                    required
+                    sx={{ width: 307 }}
+                    color="primary"
+                    variant="outlined"
+                    type="text"
+                    label="Enter your email here*"
+                    placeholder="Enter your email here*"
+                    size="medium"
+                    margin="none"
                   />
                   <button className={styles.button}>
                     <div className={styles.subscribeNow}>Subscribe Now</div>
@@ -239,9 +254,24 @@ const AboutPage: FunctionComponent = () => {
                 </div>
               </div>
             </div>
+            <button className={styles.buttonChat} onClick={openChattingPopup}>
+              <img className={styles.icon} alt="" src="/frame1.svg" />
+              <div className={styles.text2}>
+                <div className={styles.chattingService}>채팅 서비스</div>
+              </div>
+            </button>
           </div>
         </footer>
       </div>
+      {isChattingPopupOpen && (
+        <PortalPopup
+          overlayColor="rgba(113, 113, 113, 0.6)"
+          placement="Bottom right"
+          onOutsideClick={closeChattingPopup}
+        >
+          <ChattingPopup onClose={closeChattingPopup} />
+        </PortalPopup>
+      )}
       {isDrawerEmptyCartOpen && (
         <PortalDrawer
           overlayColor="rgba(113, 113, 113, 0.3)"

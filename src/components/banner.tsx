@@ -17,7 +17,7 @@ const Banner: FunctionComponent = () => {
         <article className={styles.banner1}>
           <div className={styles.bannerContent}>
             <div className={styles.vectorParent}>
-              <img className={styles.vectorIcon} alt="" src="/vector51.svg" />
+              <img className={styles.vectorIcon} alt="" src="/vector2.svg" />
               <div className={styles.aBoutiqueShop}>A boutique Shop</div>
               <div className={styles.forYourLittleOnes}>
                 for your little ones

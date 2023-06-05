@@ -47,11 +47,11 @@ const PhoneMenuPage: FunctionComponent<PhoneMenuPageType> = ({ onClose }) => {
   }, [navigate]);
 
   const onAboutClick = useCallback(() => {
-    navigate("/aboutpage");
+    navigate("/aboutpage1");
   }, [navigate]);
 
   const onContactClick = useCallback(() => {
-    navigate("/aboutpage1");
+    navigate("/aboutpage");
   }, [navigate]);
 
   return (
@@ -64,8 +64,8 @@ const PhoneMenuPage: FunctionComponent<PhoneMenuPageType> = ({ onClose }) => {
           </div>
           <button className={styles.xSquare}>
             <img className={styles.vectorIcon} alt="" />
-            <img className={styles.vectorIcon1} alt="" src="/vector2.svg" />
-            <img className={styles.vectorIcon1} alt="" src="/vector3.svg" />
+            <img className={styles.vectorIcon1} alt="" src="/vector21.svg" />
+            <img className={styles.vectorIcon1} alt="" src="/vector31.svg" />
           </button>
         </div>
         <div className={styles.boysGirlsParent}>

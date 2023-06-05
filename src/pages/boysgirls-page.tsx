@@ -1,4 +1,7 @@
 import { FunctionComponent, useState, useCallback } from "react";
+import { TextField } from "@mui/material";
+import ChattingPopup from "../components/chatting-popup";
+import PortalPopup from "../components/portal-popup";
 import DrawerEmptyCart from "../components/drawer-empty-cart";
 import PortalDrawer from "../components/portal-drawer";
 import { useNavigate } from "react-router-dom";
@@ -6,10 +9,19 @@ import PhoneMenuPage from "../components/phone-menu-page";
 import ProductListRow12 from "../components/product-list-row12";
 import styles from "./boysgirls-page.module.css";
 const BoysgirlsPage: FunctionComponent = () => {
+  const [isChattingPopupOpen, setChattingPopupOpen] = useState(false);
   const [isDrawerEmptyCartOpen, setDrawerEmptyCartOpen] = useState(false);
   const navigate = useNavigate();
   const [isDrawerEmptyCart1Open, setDrawerEmptyCart1Open] = useState(false);
   const [isPhoneMenuPageOpen, setPhoneMenuPageOpen] = useState(false);
+
+  const openChattingPopup = useCallback(() => {
+    setChattingPopupOpen(true);
+  }, []);
+
+  const closeChattingPopup = useCallback(() => {
+    setChattingPopupOpen(false);
+  }, []);
 
   const openDrawerEmptyCart = useCallback(() => {
     setDrawerEmptyCartOpen(true);
@@ -31,12 +43,8 @@ const BoysgirlsPage: FunctionComponent = () => {
     navigate("/toysdecorpage");
   }, [navigate]);
 
-  const onAboutClick = useCallback(() => {
-    navigate("/aboutpage");
-  }, [navigate]);
-
   const onContactClick = useCallback(() => {
-    navigate("/aboutpage1");
+    navigate("/aboutpage");
   }, [navigate]);
 
   const openDrawerEmptyCart1 = useCallback(() => {
@@ -94,9 +102,7 @@ const BoysgirlsPage: FunctionComponent = () => {
                 className={styles.toysDecor}
                 onClick={onToysDecorClick}
               >{`Toys & Decor`}</div>
-              <div className={styles.about} onClick={onAboutClick}>
-                About
-              </div>
+              <div className={styles.about}>About</div>
               <div className={styles.contact} onClick={onContactClick}>
                 Contact
               </div>
@@ -104,7 +110,7 @@ const BoysgirlsPage: FunctionComponent = () => {
             <article className={styles.memberSection}>
               <div className={styles.logIn}>
                 <img className={styles.icon} alt="" src="/icon.svg" />
-                <div className={styles.name}>로그인</div>
+                <div className={styles.div1}>로그인</div>
               </div>
               <button
                 className={styles.cartIcon1}
@@ -264,11 +270,16 @@ const BoysgirlsPage: FunctionComponent = () => {
                   <div className={styles.joinOurMailing}>
                     Join Our Mailing List
                   </div>
-                  <input
+                  <TextField
                     className={styles.inputBox}
-                    type="email"
-                    placeholder="Enter your email here*       "
-                    required
+                    sx={{ width: 307 }}
+                    color="primary"
+                    variant="outlined"
+                    type="text"
+                    label="Enter your email here*"
+                    placeholder="Enter your email here*"
+                    size="medium"
+                    margin="none"
                   />
                   <button className={styles.button}>
                     <div className={styles.subscribeNow}>Subscribe Now</div>
@@ -291,9 +302,24 @@ const BoysgirlsPage: FunctionComponent = () => {
                 </div>
               </div>
             </div>
+            <button className={styles.buttonChat} onClick={openChattingPopup}>
+              <img className={styles.icon} alt="" src="/frame4.svg" />
+              <div className={styles.text}>
+                <div className={styles.chattingService}>채팅 서비스</div>
+              </div>
+            </button>
           </div>
         </footer>
       </div>
+      {isChattingPopupOpen && (
+        <PortalPopup
+          overlayColor="rgba(113, 113, 113, 0.6)"
+          placement="Bottom right"
+          onOutsideClick={closeChattingPopup}
+        >
+          <ChattingPopup onClose={closeChattingPopup} />
+        </PortalPopup>
+      )}
       {isDrawerEmptyCartOpen && (
         <PortalDrawer
           overlayColor="rgba(113, 113, 113, 0.3)"

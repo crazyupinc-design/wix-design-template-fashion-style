@@ -119,7 +119,7 @@
 .toysDecor {
   display: flex;
   justify-content: center;
-  width: 88.34px;
+  width: 97px;
 }
 .about {
   width: 39.92px;
@@ -148,19 +148,12 @@
   gap: var(--gap-51xl);
   color: inherit;
 }
-.div1,
 .icon {
   position: relative;
-}
-.icon {
   width: 26px;
   height: 26px;
 }
-.div1 {
-  line-height: 22.4px;
-}
 .logIn {
-  width: 116px;
   height: 38px;
   display: flex;
   flex-direction: row;
@@ -521,28 +514,18 @@
   height: 20px;
   flex-shrink: 0;
 }
-.inputBox,
-.subscribeNow {
-  font-family: var(--font-inter);
-  display: flex;
-}
 .inputBox {
-  border: 1px solid var(--color-darkslategray-200);
-  font-size: var(--font-size-base);
-  background-color: var(--color-lightblue);
-  box-sizing: border-box;
-  width: 307px;
-  flex-direction: column;
-  padding: var(--padding-5xs) var(--padding-2xl);
-  align-items: flex-start;
-  justify-content: flex-start;
+  border: 0;
+  background-color: transparent;
 }
 .subscribeNow {
   position: relative;
   font-size: var(--font-size-sm);
   line-height: 22.4px;
+  font-family: var(--font-inter);
   color: var(--color-darkslategray-200);
   text-align: center;
+  display: flex;
   width: 250px;
   height: 23px;
   flex-shrink: 0;
@@ -597,6 +580,7 @@
 }
 .footerLinks {
   align-self: stretch;
+  z-index: 0;
 }
 .faceBook,
 .insta,
@@ -637,7 +621,6 @@
   height: 16px;
   flex-shrink: 0;
 }
-.footerLinksParent,
 .licenseMark,
 .snsParent {
   display: flex;
@@ -649,59 +632,34 @@
   height: 19.5px;
   justify-content: center;
 }
-.footerLinksParent,
 .snsParent {
   align-self: stretch;
   justify-content: flex-start;
-}
-.snsParent {
   gap: var(--gap-lg);
+  z-index: 1;
   text-align: center;
   font-size: var(--font-size-2xs);
-}
-.footerLinksParent {
-  gap: var(--gap-65xl);
-}
-.chattingService,
-.footer {
-  font-family: var(--font-inter);
-}
-.footer {
-  align-self: stretch;
-  background-color: var(--color-lightblue);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-21xl) var(--padding-10xs) var(--padding-21xl)
-    var(--padding-7xl);
-  align-items: center;
-  justify-content: center;
-  z-index: 7;
-  text-align: left;
-  font-size: var(--font-size-sm);
-  color: var(--color-darkslategray-200);
 }
 .chattingService {
   position: relative;
   font-size: var(--font-size-lg);
+  font-family: var(--font-inter);
   color: var(--color-white);
   text-align: center;
+}
+.buttonChat,
+.text {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 .text {
   width: 88px;
   overflow: hidden;
   flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
   padding: var(--padding-10xs) 0 0;
-  box-sizing: border-box;
   align-items: flex-start;
   justify-content: flex-start;
-}
-.buttonChat,
-.mainPage {
-  display: flex;
-  align-items: center;
 }
 .buttonChat {
   cursor: pointer;
@@ -711,32 +669,54 @@
   background-color: var(--color-lightcoral-100);
   margin: 0 !important;
   position: absolute;
-  right: 46px;
-  bottom: 107.5px;
+  top: 205px;
+  left: 1181px;
   border-radius: var(--br-11xl);
   box-shadow: 0 0 3px rgba(182, 180, 180, 0.5);
-  width: 193px;
   height: 56px;
-  flex-direction: row;
-  box-sizing: border-box;
+  align-items: center;
   justify-content: flex-end;
   gap: var(--gap-3xs);
-  z-index: 8;
+  z-index: 2;
+}
+.footer,
+.footerLinksParent,
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerLinksParent {
+  align-self: stretch;
+  justify-content: flex-start;
+  position: relative;
+  gap: var(--gap-65xl);
+}
+.footer,
+.mainPage {
+  overflow: hidden;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslategray-200);
+  font-family: var(--font-inter);
+}
+.footer {
+  align-self: stretch;
+  background-color: var(--color-lightblue);
+  padding: var(--padding-21xl) var(--padding-10xs) var(--padding-21xl)
+    var(--padding-7xl);
+  justify-content: center;
+  z-index: 7;
+  text-align: left;
 }
 .mainPage {
   position: relative;
   width: 100%;
-  overflow: hidden;
-  flex-direction: column;
   justify-content: flex-start;
   background-image: url(/public/mainpage@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   text-align: center;
-  font-size: var(--font-size-sm);
-  color: var(--color-darkslategray-200);
-  font-family: var(--font-inter);
 }
 @media screen and (max-width: 1060px) {
   .cartIcon {

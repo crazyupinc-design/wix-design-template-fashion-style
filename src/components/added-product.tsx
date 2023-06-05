@@ -21,9 +21,9 @@ const AddedProduct: FunctionComponent = () => {
           <div className={styles.price}>₩20</div>
         </div>
         <div className={styles.parent}>
-          <div className={styles.name}>-</div>
-          <div className={styles.name}>1</div>
-          <div className={styles.name}>+</div>
+          <div className={styles.div}>-</div>
+          <div className={styles.div}>1</div>
+          <div className={styles.div}>+</div>
         </div>
       </div>
       <img className={styles.xCircleIcon} alt="" src="/xcircle.svg" />

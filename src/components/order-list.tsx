@@ -28,7 +28,7 @@ const OrderList: FunctionComponent = () => {
               </div>
               <div className={styles.deliveryCharge}>예상배송비</div>
             </div>
-            <img className={styles.xCircleIcon} alt="" src="/xcircle1.svg" />
+            <img className={styles.xCircleIcon} alt="" src="/xcircle11.svg" />
           </div>
         </div>
         <div className={styles.totalPrice}>

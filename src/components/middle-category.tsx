@@ -9,7 +9,7 @@ const MiddleCategory: FunctionComponent = () => {
   }, [navigate]);
 
   const onButton2Click = useCallback(() => {
-    navigate("/aboutpage");
+    navigate("/aboutpage1");
   }, [navigate]);
 
   const onLandingImage2Click = useCallback(() => {

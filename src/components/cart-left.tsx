@@ -40,7 +40,7 @@ const CartLeft: FunctionComponent = () => {
               <div className={styles.name}>I'm a product</div>
               <div className={styles.price}>₩20</div>
             </div>
-            <img className={styles.xCircleIcon} alt="" src="/xcircle.svg" />
+            <img className={styles.xCircleIcon} alt="" src="/xcircle1.svg" />
           </div>
           <div className={styles.quantityPrice}>
             <input
